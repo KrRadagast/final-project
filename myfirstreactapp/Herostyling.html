@@ -39,18 +39,22 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/lg/346-iron-man.jpg">
+             <img src={hero.image} alt="hero Image"></img>
               <span class="card-title"></span>
             </div>
             <div class="card-content">
-              <p id="heroDescrip">Iron man.</p>
-              <p>human male</p>
+              <p id="heroDescrip">{hero.typedName}</p>
+                <li>{hero.gender}</li>
+                <li>{hero.race}</li>
             </div>
             <div class="card-action">
-              <a>attack</a>
-              <a> intelligence</a>
-              <a>durability</a>
-              <a>power</a>
+              <ul>
+                <li>Strength {hero.strength}</li>
+                <li>intelligence {hero.intelligence}</li>
+                <li>Speed {hero.speed}</li>
+                <li>durability {hero.durability}</li>
+                <li>Power {hero.power}</li>
+                </ul>
             </div>
           </div>
         </div>

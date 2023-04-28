@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: auto;
+    background-color: aquamarine;
+    text-align: center;
+    border-left: 0.5rem solid black;
+    border-right: 0.5rem solid black;
+   border-color: black;
+   
+}
+.cardBottom{
+    margin: auto;
+    text-align: center;
+    border-bottom: 0.5rem solid black;
+   border-color: black;
+   
+}
+.p2{
+    display: flex;
+   
+    
+}
+.nav{
+    
+    font-size: medium;
+}
+.button{
+    
+}
