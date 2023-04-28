@@ -3,7 +3,6 @@ import "./heroStyle.css";
 export default function HeroCard() {
   let [heroObj, setHeroObj] = useState([]);
   const [heros, setHeros] = useState([]);
-  const [name, setName] = useState([]);
   const [inputText, setInputText] = useState("");
   useEffect(() => {
     getHero();
@@ -41,7 +40,6 @@ export default function HeroCard() {
         typedName:"hero not found check spelling"
       }
     }
-    //check if hero not found
     
       return{
       typedName:hero,
@@ -77,7 +75,7 @@ export default function HeroCard() {
             <img  src={hero.image}  alt="hero Image" ></img>
             <p>{hero.race} {hero.gender}</p>
             <p>alignment {hero.alignment}</p>
-            </ul> 
+            
       <table className="cardBottom">
         <thead>
           <tr>
@@ -98,7 +96,8 @@ export default function HeroCard() {
             <td>{hero.power}</td>
           </tr>
         </tbody>
-      </table>  
+      </table>
+      </ul>   
       </div>);
       })}
     </div>    

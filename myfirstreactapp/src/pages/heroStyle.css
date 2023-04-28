@@ -3,31 +3,25 @@
     justify-content: center;
     align-items: center;
 }
+
 .card{
-    margin: auto;
+    
     background-color: aquamarine;
     text-align: center;
+    border-top: 0.5rem solid black;
     border-left: 0.5rem solid black;
     border-right: 0.5rem solid black;
-   border-color: black;
+     border-bottom: 0.5rem solid black;
+    margin-left:600px;
+    margin-right: 600px;
+    border-color: black;
    
 }
 .cardBottom{
-    margin: auto;
+    background-color: aquamarine;
     text-align: center;
-    border-bottom: 0.5rem solid black;
-   border-color: black;
+    margin: auto;
    
-}
-.p2{
-    display: flex;
+    border-color: black;
    
-    
-}
-.nav{
-    
-    font-size: medium;
-}
-.button{
-    
 }
