@@ -8,8 +8,6 @@ export default function HeroCard() {
     getHero();
   }, []);
   const getHero= function() {
-
-
     try {
         fetch(
         `https://akabab.github.io/superhero-api/api/all.json`
@@ -22,18 +20,15 @@ export default function HeroCard() {
       console.log(error);
     }
   }
-  console.log(heroObj)
   function handleSubmit(e) {
     e.preventDefault();
     
     setHeros([...heros, inputText]);
   }
   const heroInfo = heros.slice(-1).map((hero) => {
-    //console.log(heroObj)
     const foundHero = heroObj.find((heroObj) => {
 
         return heroObj.name == hero;
-
     });
     if(!foundHero){
       return{
@@ -52,12 +47,8 @@ export default function HeroCard() {
       durability:foundHero.powerstats.durability,
       power:foundHero.powerstats.power,
       image:foundHero.images.lg
-    
-    
-      
       }
   });
-
   return (
     <div >
       <h1 className="container">Type the name of a hero!</h1>
@@ -75,7 +66,6 @@ export default function HeroCard() {
             <img  src={hero.image}  alt="hero Image" ></img>
             <p>{hero.race} {hero.gender}</p>
             <p>alignment {hero.alignment}</p>
-            
       <table className="cardBottom">
         <thead>
           <tr>

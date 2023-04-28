@@ -1,6 +1,13 @@
 # HEROES UNITE
 ### Tables of contents
-- about
+- about- [about](#about)
+- [possibleIssues](#possibleIssues)
+- [Usage](#Usage)
+- [What-I-learned](#What-I-Learned)
+- [Screenshot-of-Application](#Screenshot-of-Application)
+- [Links](#Links)
+- [Questions?](#Questions?)
+- [License](#License)
 - possible issues
 - examples
 - what I learned
